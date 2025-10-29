@@ -14,9 +14,62 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Alida UI",
-  description: "Minimal UI for fast-moving teams",
+export const metadata = {
+  title: {
+    default: "Alida UI — Minimal UI for fast-moving teams",
+    template: "%s | Alida UI",
+  },
+  description:
+    "Alida UI is a minimalist, open-source design system built with React, Next.js, and Tailwind CSS — designed for speed, clarity, and flexibility.",
+  keywords: [
+    "React UI components",
+    "Tailwind design system",
+    "open source UI library",
+    "Next.js components",
+    "minimal design system",
+    "Shadcn alternative",
+    "React component library",
+    "UI kit for developers",
+  ],
+  authors: [{ name: "Jakob Dahlin" }],
+  creator: "Jakob Dahlin",
+  metadataBase: new URL("https://alidaui.vercel.app"),
+  openGraph: {
+    title: "Alida UI — Minimal UI for fast-moving teams",
+    description:
+      "A minimalist, open-source design system for developers building modern web interfaces with clarity and speed.",
+    url: "https://alidaui.vercel.app",
+    siteName: "Alida UI",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Alida UI preview",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Alida UI — Minimal UI for fast-moving teams",
+    description:
+      "A minimalist, open-source design system for developers building modern web interfaces with clarity and speed.",
+    creator: "@jakobdahlin",
+    images: ["/og-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -42,6 +95,25 @@ export default function RootLayout({
 
     {/* ✅ Footer stays at the bottom */}
     <Footer />
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      name: "Alida UI",
+      applicationCategory: "DeveloperTool",
+      operatingSystem: "Any",
+      description:
+        "An open-source React and Tailwind CSS design system for building beautiful, fast interfaces.",
+      url: "https://alidaui.vercel.app",
+      author: {
+        "@type": "Person",
+        name: "Jakob Dahlin",
+      },
+    }),
+  }}
+/>
   </body>
     </html>
   );
