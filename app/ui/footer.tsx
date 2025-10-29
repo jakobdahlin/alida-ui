@@ -40,7 +40,7 @@ export const Footer = () => {
           <div className="flex flex-col gap-2">
             <p className="text-white font-semibold mb-1">Resources</p>
             <Link href="/components" className="text-white/50 hover:text-white transition">Components</Link>
-            <Link href="/docs" className="text-white/50 hover:text-white transition">Docs (coming soon)</Link>
+            <Link href="/docs" className="text-white/50 hover:text-white transition">Docs</Link>
             <Link href="/about" className="text-white/50 hover:text-white transition">About</Link>
             <a
               href="https://vercel.com"
