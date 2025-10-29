@@ -9,7 +9,7 @@ Docs￼ · GitHub￼ · NPM (alida-ui)￼
 
 ## 🚀 Installation
 
-npm install alida-ui
+npm i alida-ui
 # or
 yarn add alida-ui
 # or

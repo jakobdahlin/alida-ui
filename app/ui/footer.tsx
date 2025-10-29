@@ -21,7 +21,7 @@ export const Footer = () => {
     <div className="relative mt-2">
       {/* Ghost placeholder keeps layout perfectly centered */}
       <div className="invisible select-none px-4 py-2 border border-transparent rounded-md min-w-[230px] sm:min-w-[250px]">
-        npm install alida-ui
+        npm i alida-ui
       </div>
 
       {/* Real animated version overlays the ghost */}

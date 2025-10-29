@@ -15,12 +15,13 @@ Every component is built to be fast, responsive, and themeable.
 
 ## 🧩 Components
 
-The library currently includes:
-- **Button** – minimal, accessible buttons with hover and press states  
-- **Card** – flexible container for any type of content  
-- **Navbar** – responsive navigation bar  
-- **Input** – styled input field with label support  
-- And more coming soon…
+**Button** – minimal, accessible button with hover and press states
+**Card** – flexible container for any type of content
+**Navbar** – responsive navigation bar with mobile toggle
+**Input** – styled input field with optional label and focus states
+**Badge** – status indicators with variants like success, warning, and error
+**Toggle** – lightweight on/off switch built with accessibility in mind
+**Tabs** – horizontal content switcher for sectioned layouts
 
 ---
 
