@@ -8,7 +8,6 @@ import Link from "next/link";
 
 const navItems = [
   { label: "Components", icon: <Box size={18} />, href: "/components" },
-  { label: "About", icon: <User size={18} />, href: "/about" },
   { label: "Docs", icon: <Dock size={18} />, href: "/docs" },
 ];
 

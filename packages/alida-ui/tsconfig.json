@@ -1,21 +1,17 @@
 {
     "extends": "../../tsconfig.json",
     "compilerOptions": {
+      "incremental": false,
+      "outDir": "dist",
+      "declaration": true,
+      "emitDeclarationOnly": true,
+      "noEmit": false,
+      "jsx": "react-jsx",
       "baseUrl": ".",
       "paths": {
-        "@/*": ["./app/*"],
-        "alida-ui": ["../packages/alida-ui/src"]
+        "@/*": ["*"],
+        "alida-ui": ["packages/alida-ui/src"]
       }
     },
-    "include": [
-      "next-env.d.ts",
-      "app",
-      "components",
-      "pages",
-      "lib",
-      "types",
-      "**/*.ts",
-      "**/*.tsx"
-    ],
-    "exclude": ["node_modules"]
+    "include": ["src"]
   }

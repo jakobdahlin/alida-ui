@@ -14488,8 +14488,16 @@ var __iconNode3 = [
 ];
 var Coffee = createLucideIcon("coffee", __iconNode3);
 
-// ../../node_modules/lucide-react/dist/esm/icons/github.js
+// ../../node_modules/lucide-react/dist/esm/icons/dock.js
 var __iconNode4 = [
+  ["path", { d: "M2 8h20", key: "d11cs7" }],
+  ["rect", { width: "20", height: "16", x: "2", y: "4", rx: "2", key: "18n3k1" }],
+  ["path", { d: "M6 16h12", key: "u522kt" }]
+];
+var Dock = createLucideIcon("dock", __iconNode4);
+
+// ../../node_modules/lucide-react/dist/esm/icons/github.js
+var __iconNode5 = [
   [
     "path",
     {
@@ -14499,10 +14507,10 @@ var __iconNode4 = [
   ],
   ["path", { d: "M9 18c-4.51 2-5-2-7-2", key: "9comsn" }]
 ];
-var Github = createLucideIcon("github", __iconNode4);
+var Github = createLucideIcon("github", __iconNode5);
 
 // ../../node_modules/lucide-react/dist/esm/icons/heart.js
-var __iconNode5 = [
+var __iconNode6 = [
   [
     "path",
     {
@@ -14511,29 +14519,22 @@ var __iconNode5 = [
     }
   ]
 ];
-var Heart = createLucideIcon("heart", __iconNode5);
+var Heart = createLucideIcon("heart", __iconNode6);
 
 // ../../node_modules/lucide-react/dist/esm/icons/mail.js
-var __iconNode6 = [
+var __iconNode7 = [
   ["path", { d: "m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7", key: "132q7q" }],
   ["rect", { x: "2", y: "4", width: "20", height: "16", rx: "2", key: "izxlao" }]
 ];
-var Mail = createLucideIcon("mail", __iconNode6);
+var Mail = createLucideIcon("mail", __iconNode7);
 
 // ../../node_modules/lucide-react/dist/esm/icons/menu.js
-var __iconNode7 = [
+var __iconNode8 = [
   ["path", { d: "M4 5h16", key: "1tepv9" }],
   ["path", { d: "M4 12h16", key: "1lakjw" }],
   ["path", { d: "M4 19h16", key: "1djgab" }]
 ];
-var Menu = createLucideIcon("menu", __iconNode7);
-
-// ../../node_modules/lucide-react/dist/esm/icons/user.js
-var __iconNode8 = [
-  ["path", { d: "M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2", key: "975kel" }],
-  ["circle", { cx: "12", cy: "7", r: "4", key: "17ys0d" }]
-];
-var User = createLucideIcon("user", __iconNode8);
+var Menu = createLucideIcon("menu", __iconNode8);
 
 // ../../node_modules/lucide-react/dist/esm/icons/x.js
 var __iconNode9 = [
@@ -14547,8 +14548,7 @@ var import_link = __toESM(require_link2());
 import { Fragment as Fragment4, jsx as jsx9, jsxs as jsxs2 } from "react/jsx-runtime";
 var navItems = [
   { label: "Components", icon: /* @__PURE__ */ jsx9(Box, { size: 18 }), href: "/components" },
-  { label: "About", icon: /* @__PURE__ */ jsx9(User, { size: 18 }), href: "/about" },
-  { label: "Github", icon: /* @__PURE__ */ jsx9(Github, { size: 18 }), href: "https://github.com/jakobdahlin/alida-ui" }
+  { label: "Docs", icon: /* @__PURE__ */ jsx9(Dock, { size: 18 }), href: "/docs" }
 ];
 var Navbar = () => {
   const pathname = (0, import_navigation.usePathname)();
@@ -14805,11 +14805,11 @@ lucide-react/dist/esm/createLucideIcon.js:
 lucide-react/dist/esm/icons/box.js:
 lucide-react/dist/esm/icons/code-xml.js:
 lucide-react/dist/esm/icons/coffee.js:
+lucide-react/dist/esm/icons/dock.js:
 lucide-react/dist/esm/icons/github.js:
 lucide-react/dist/esm/icons/heart.js:
 lucide-react/dist/esm/icons/mail.js:
 lucide-react/dist/esm/icons/menu.js:
-lucide-react/dist/esm/icons/user.js:
 lucide-react/dist/esm/icons/x.js:
 lucide-react/dist/esm/lucide-react.js:
   (**

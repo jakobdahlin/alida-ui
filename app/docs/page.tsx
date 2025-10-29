@@ -23,7 +23,7 @@ export default function DocsPage() {
         {/* HERO */}
         <section className="text-center space-y-6">
           <h1 className="text-3xl font-semibold">Alida UI Documentation</h1>
-          <p className="text-white/60 max-w-[600px] mx-auto">
+          <p className="text-white/50 max-w-[600px] mx-auto">
             A minimal, open-source design system for building modern interfaces
             with clarity and speed. Learn how to install, import, and customize
             each component below.
@@ -64,7 +64,7 @@ export default function DocsPage() {
             Import components directly from the library and start building your
             UI immediately:
           </p>
-          <pre className="bg-white/5 border border-white/10 rounded-xl p-4 text-sm text-white/70 text-left overflow-x-auto">
+          <pre className="bg-white/5 border border-white/10 rounded-xl p-4 text-sm text-white/50 text-left overflow-x-auto">
 {`import { Button } from "alida-ui";
 
 export default function Example() {
@@ -76,14 +76,15 @@ export default function Example() {
         {/* CUSTOMIZATION */}
         <section>
           <h2 className="text-2xl font-semibold mb-6 mt-6">Customization</h2>
-          <p className="text-white/60 mb-4">
+          <p className="text-white/50 mb-4">
             Alida UI is built with Tailwind CSS and uses neutral white opacity
             layers, ensuring seamless adaptation to any background. You can
             easily override styles using utility classes or pass custom class
             names to each component.
           </p>
-          <pre className="bg-white/5 border border-white/10 rounded-xl p-4 text-sm text-white/70 text-left overflow-x-auto">
-{`<Button className="border-white/40 bg-white/10 hover:bg-white/20">
+          <pre className="bg-white/5 border border-white/10 rounded-xl p-4 
+          text-sm text-white/50 text-left overflow-x-auto">
+{`<Button className="border-white/50 bg-white/10 hover:bg-white/20">
   Custom Button
 </Button>`}
           </pre>
@@ -93,8 +94,9 @@ export default function Example() {
         <section>
           <h2 className="text-2xl font-semibold mb-6 mt-6">Components</h2>
           <div className="overflow-x-auto">
-            <table className="w-full border-collapse border border-white/10 rounded-xl overflow-hidden text-left text-sm">
-              <thead className="bg-white/5 border-b border-white/50">
+            <table className="w-full border-collapse border border-white/10 rounded-xl 
+            overflow-hidden text-left text-sm">
+              <thead className="bg-white/10 border-b border-white/10">
                 <tr>
                   <th className="py-2 px-4 text-white text-lg">Name</th>
                   <th className="py-2 px-4 text-white text-lg">File</th>
@@ -107,9 +109,9 @@ export default function Example() {
                 {components.map((component) => (
                   <tr
                     key={component.name}
-                    className="hover:bg-white/40 transition-colors border-b border-white/10"
+                    className="hover:bg-white/5 duration-300 transition-colors border-white/10"
                   >
-                    <td className="py-3 px-4 font-medium text-white/90 text-s">
+                    <td className="py-3 px-4 font-medium text-white text-s">
                       {component.name}
                     </td>
                     <td className="py-3 px-4 text-white/50 font-mono text-s">
@@ -120,10 +122,10 @@ export default function Example() {
                         href={`https://github.com/jakobdahlin/alida-ui/blob/main/packages/alida-ui/${component.path}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex py-1 items-center gap-1 text-white/60 hover:text-white transition 
+                        className="inline-flex py-1 items-center gap-1 text-white/50 hover:text-white transition 
                         text-s"
                       >
-                        <Button className="px-6 flex">View<ArrowUpRight size={14} /></Button>
+                        <Button className="px-6 flex items-center">View<ArrowUpRight size={16} /></Button>
                       </a>
                     </td>
                   </tr>
@@ -136,7 +138,7 @@ export default function Example() {
         {/* CONTRIBUTION */}
         <section className="pt-6 border-t border-white/10">
           <h2 className="text-2xl font-semibold mb-4">Contribute</h2>
-          <p className="text-white/60 mb-4">
+          <p className="text-white/50 mb-4">
             Alida UI is open source and evolving. You can help improve it by
             reporting issues, suggesting new components, or contributing code on
             GitHub.
@@ -145,9 +147,9 @@ export default function Example() {
             href="https://github.com/jakobdahlin/alida-ui"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm text-white/70 hover:text-white hover:bg-white/10 transition"
+            className="inline-flex py-1 items-center gap-1 text-white/50 hover:text-white transition text-s"
           >
-            <Github size={16} /> Contribute on GitHub
+            <Button className="px-6 flex items-center"><Github size={16} /> Contribute on GitHub</Button>
           </a>
         </section>
       </div>

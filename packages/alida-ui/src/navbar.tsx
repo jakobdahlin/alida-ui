@@ -2,14 +2,13 @@
 
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { User, Github, Box, Menu, X } from "lucide-react";
+import { User, Dock, Box, Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 
 const navItems = [
   { label: "Components", icon: <Box size={18} />, href: "/components" },
-  { label: "About", icon: <User size={18} />, href: "/about" },
-  { label: "Github", icon: <Github size={18} />, href: "https://github.com/jakobdahlin/alida-ui" },
+  { label: "Docs", icon: <Dock size={18} />, href: "/docs" },
 ];
 
 export const Navbar = () => {

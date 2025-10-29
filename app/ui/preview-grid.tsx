@@ -44,7 +44,7 @@ export function PreviewGrid() {
             </div>
 
             <CardContent delay={0.2}>
-              <h3 className="text-xl font-semibold mb-2 text-white/95">
+              <h3 className="text-white/90 mb-2 text-lg font-medium">
                 Demo Card
               </h3>
               <p className="text-white/50 mb-4">
