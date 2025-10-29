@@ -1,0 +1,21 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["./app/*"],
+        "alida-ui": ["../packages/alida-ui/src"]
+      }
+    },
+    "include": [
+      "next-env.d.ts",
+      "app",
+      "components",
+      "pages",
+      "lib",
+      "types",
+      "**/*.ts",
+      "**/*.tsx"
+    ],
+    "exclude": ["node_modules"]
+  }
