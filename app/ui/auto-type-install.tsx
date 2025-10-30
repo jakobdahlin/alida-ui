@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 
 export function AutoTypeInstall() {
   const [displayText, setDisplayText] = useState("")
-  const fullText = "npm install alida-ui"
+  const fullText = "npm i alida-ui"
 
   useEffect(() => {
     let currentIndex = 0
