@@ -33,3 +33,19 @@ export function Badge({ children, variant = "default", className = "" }: BadgePr
  * <Badge variant="warning">Draft</Badge>
  * <Badge variant="error">Failed</Badge>
  */
+
+/** -- MOVEMENT FOR ERROR BADGE (globals.css)
+ @keyframes wiggle {
+  0% {transform: skewX(9deg);}
+  10% {transform: skewX(-8deg);}
+  20% {transform: skewX(7deg);}
+  30% {transform: skewX(-6deg);}
+  40% {transform: skewX(5deg);}
+  50% {transform: skewX(-4deg);}
+  60% {transform: skewX(3deg);}
+  70% {transform: skewX(-2deg);}
+  80% {transform: skewX(1deg);}
+  90% {transform: skewX(0deg);}
+  100% {transform: skewX(0deg);}
+  }
+ */

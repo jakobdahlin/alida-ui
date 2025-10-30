@@ -2,13 +2,14 @@
 
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { User, Dock, Box, Menu, X } from "lucide-react";
+import { DollarSign, Dock, Mail, Box, Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 
 const navItems = [
-  { label: "Components", icon: <Box size={18} />, href: "/components" },
-  { label: "Docs", icon: <Dock size={18} />, href: "/docs" },
+  { label: "Components", icon: <Box size={18} />, href: "/" },
+  { label: "Pricing", icon: <DollarSign size={18} />, href: "/" },
+  { label: "Contact", icon: <Mail size={18} />, href: "/" },
 ];
 
 export const Navbar = () => {
@@ -22,7 +23,7 @@ export const Navbar = () => {
         <div className="relative flex w-full items-center justify-between p-2 rounded-full overflow-hidden">
           <Link href="/" className="block">
             <p className="text-lg px-2 py-1 text-white hover:scale-95 transition duration-200 tracking-wide">
-              Alida
+              Logo
             </p>
           </Link>
 
@@ -70,7 +71,7 @@ export const Navbar = () => {
 
           {/* 📱 Mobile Toggle */}
           <button
-            className="md:hidden text-white/80 hover:text-white px-3"
+            className="md:hidden text-white/50 hover:text-white px-3"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -84,7 +85,7 @@ export const Navbar = () => {
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.3, ease: "easeInOut" }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
               className="w-full mt-3 rounded-2xl bg-black/50 backdrop-blur-lg py-10 flex flex-col items-center overflow-hidden"
             >
               {navItems.map(({ label, href }) => {

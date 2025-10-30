@@ -14310,7 +14310,7 @@ function Button({ children, className = "", onClick, delay: delay2 = 0 }) {
       viewport: { once: true, amount: 0.2 },
       transition: { opacity: { duration: 0.6, ease: "easeOut", delay: delay2 } },
       className: `gap-2 px-4 rounded-lg bg-transparent border border-white/30 text-white/90
-        hover:border-white hover:shadow-lg hover:shadow-white/50 py-2.5
+        hover:border-white hover:shadow-lg hover:shadow-white/50 py-1.5
         transition-[background-color,border-color,box-shadow,color] ease-in-out duration-300 transitions
         hover:bg-white/20 hover:text-white backdrop-blur-sm active:shadow-md
         ${className}`,
@@ -14503,13 +14503,12 @@ var __iconNode3 = [
 ];
 var Coffee = createLucideIcon("coffee", __iconNode3);
 
-// ../../node_modules/lucide-react/dist/esm/icons/dock.js
+// ../../node_modules/lucide-react/dist/esm/icons/dollar-sign.js
 var __iconNode4 = [
-  ["path", { d: "M2 8h20", key: "d11cs7" }],
-  ["rect", { width: "20", height: "16", x: "2", y: "4", rx: "2", key: "18n3k1" }],
-  ["path", { d: "M6 16h12", key: "u522kt" }]
+  ["line", { x1: "12", x2: "12", y1: "2", y2: "22", key: "7eqyqh" }],
+  ["path", { d: "M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6", key: "1b0p4s" }]
 ];
-var Dock = createLucideIcon("dock", __iconNode4);
+var DollarSign = createLucideIcon("dollar-sign", __iconNode4);
 
 // ../../node_modules/lucide-react/dist/esm/icons/github.js
 var __iconNode5 = [
@@ -14562,15 +14561,16 @@ var X = createLucideIcon("x", __iconNode9);
 var import_link = __toESM(require_link2());
 var import_jsx_runtime9 = require("react/jsx-runtime");
 var navItems = [
-  { label: "Components", icon: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Box, { size: 18 }), href: "/components" },
-  { label: "Docs", icon: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Dock, { size: 18 }), href: "/docs" }
+  { label: "Components", icon: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Box, { size: 18 }), href: "/" },
+  { label: "Pricing", icon: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(DollarSign, { size: 18 }), href: "/" },
+  { label: "Contact", icon: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Mail, { size: 18 }), href: "/" }
 ];
 var Navbar = () => {
   const pathname = (0, import_navigation.usePathname)();
   const [menuOpen, setMenuOpen] = (0, import_react26.useState)(false);
   return /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("header", { className: "sticky top-0 left-0 w-full flex justify-center z-50", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "flex w-full max-w-[1100px] flex-col items-center px-4 relative", children: [
     /* @__PURE__ */ (0, import_jsx_runtime9.jsxs)("div", { className: "relative flex w-full items-center justify-between p-2 rounded-full overflow-hidden", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(import_link.default, { href: "/", className: "block", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "text-lg px-2 py-1 text-white hover:scale-95 transition duration-200 tracking-wide", children: "Alida" }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(import_link.default, { href: "/", className: "block", children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("p", { className: "text-lg px-2 py-1 text-white hover:scale-95 transition duration-200 tracking-wide", children: "Logo" }) }),
       /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("nav", { className: "hidden md:flex items-center gap-2 pr-4", children: navItems.map(({ label, icon, href }) => {
         const isActive = pathname === href;
         const isExternal = href.startsWith("http");
@@ -14602,7 +14602,7 @@ var Navbar = () => {
       /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(
         "button",
         {
-          className: "md:hidden text-white/80 hover:text-white px-3",
+          className: "md:hidden text-white/50 hover:text-white px-3",
           onClick: () => setMenuOpen(!menuOpen),
           children: menuOpen ? /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(X, { size: 22 }) : /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(Menu, { size: 22 })
         }
@@ -14614,7 +14614,7 @@ var Navbar = () => {
         initial: { height: 0, opacity: 0 },
         animate: { height: "auto", opacity: 1 },
         exit: { height: 0, opacity: 0 },
-        transition: { duration: 0.3, ease: "easeInOut" },
+        transition: { duration: 0.5, ease: "easeInOut" },
         className: "w-full mt-3 rounded-2xl bg-black/50 backdrop-blur-lg py-10 flex flex-col items-center overflow-hidden",
         children: navItems.map(({ label, href }) => {
           const isExternal = href.startsWith("http");
@@ -14821,7 +14821,7 @@ lucide-react/dist/esm/createLucideIcon.js:
 lucide-react/dist/esm/icons/box.js:
 lucide-react/dist/esm/icons/code-xml.js:
 lucide-react/dist/esm/icons/coffee.js:
-lucide-react/dist/esm/icons/dock.js:
+lucide-react/dist/esm/icons/dollar-sign.js:
 lucide-react/dist/esm/icons/github.js:
 lucide-react/dist/esm/icons/heart.js:
 lucide-react/dist/esm/icons/mail.js:

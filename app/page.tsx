@@ -203,7 +203,7 @@ import { Card, CardContent } from "@/components/ui/card";
           {/* Get Code Button */}
           <Button
             onClick={() => setShowCode(!showCode)}
-            className="flex items-center gap-2 px-10 py-2.5 rounded-lg bg-white/10 text-white hover:bg-white/20 transition"
+            className="flex items-center gap-2 px-6 rounded-lg bg-white/10 text-white hover:bg-white/20 transition"
           >
             {showCode ? (
               <>
@@ -273,7 +273,7 @@ import { Card, CardContent } from "@/components/ui/card";
                   </pre>
 
                   {!expanded[type] && (
-                    <div className="absolute bottom-0 left-0 w-full h-16 bg-linear-to-t from-black/60 to-transparent pointer-events-none" />
+                    <div className="absolute bottom-0 left-0 w-full h-16 bg-transparent pointer-events-none" />
                   )}
                 </div>
               </div>

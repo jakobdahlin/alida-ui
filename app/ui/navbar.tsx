@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { User, Dock, Box, Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const navItems = [
   { label: "Components", icon: <Box size={18} />, href: "/components" },
@@ -21,9 +22,13 @@ export const Navbar = () => {
         {/* Top Row */}
         <div className="relative flex w-full items-center justify-between p-2 rounded-full overflow-hidden">
           <Link href="/" className="block">
-            <p className="text-lg px-2 py-1 text-white hover:scale-95 transition duration-200 tracking-wide">
-              Alida
-            </p>
+          <Image 
+            src="/alidalogo.png"
+            alt="Alida logo"
+            width={100}
+            height={30}
+            priority
+            className="h-7 w-auto"/>
           </Link>
 
           {/* Desktop Navigation */}

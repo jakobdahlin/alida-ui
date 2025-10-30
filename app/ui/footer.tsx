@@ -3,6 +3,7 @@
 import { Github, Heart, Mail, Code2, Coffee, Dock } from "lucide-react";
 import Link from "next/link";
 import { AutoTypeInstall } from "@/app/ui/auto-type-install";
+import Image from "next/image";
 
 export const Footer = () => {
   return (
@@ -12,7 +13,15 @@ export const Footer = () => {
       <div className="max-w-[1100px] mx-auto px-6 flex flex-col md:flex-row justify-between gap-10 mt-4">
         {/* Left — Branding */}
         <div className="flex flex-col gap-2">
-          <h2 className="text-white text-lg tracking-wide">Alida</h2>
+        <Link href="/" className="block">
+          <Image 
+            src="/alidalogo.png"
+            alt="Alida logo"
+            width={100}
+            height={30}
+            priority
+            className="h-7 w-auto"/>
+          </Link>
           <p className="text-sm text-white/50 max-w-sm">
             Minimal, open-source design system for building modern interfaces
             with clarity and speed.
@@ -41,7 +50,6 @@ export const Footer = () => {
             <p className="text-white font-semibold mb-1">Resources</p>
             <Link href="/components" className="text-white/50 hover:text-white transition">Components</Link>
             <Link href="/docs" className="text-white/50 hover:text-white transition">Docs</Link>
-            <Link href="/about" className="text-white/50 hover:text-white transition">About</Link>
             <a
               href="https://vercel.com"
               target="_blank"

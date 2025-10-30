@@ -2,13 +2,13 @@
 
 import { Layers, Square, MousePointerClick, SwitchCamera, PanelsTopLeft } from "lucide-react";
 import Image from "next/image";
-import { Badge } from "@/app/ui/badge";
-import { Toggle } from "@/app/ui/toggle";
-import { Tabs } from "@/app/ui/tabs";
-import { Button } from "@/app/ui/button";
-import { Card, CardContent } from "@/app/ui/card";
-import { Input } from "@/app/ui/input";
-import { Navbar } from "@/app/ui/navbar";
+import { Badge } from "@/packages/alida-ui/src/badge";
+import { Toggle } from "@/packages/alida-ui/src/toggle";
+import { Tabs } from "@/packages/alida-ui/src/tabs";
+import { Button } from "@/packages/alida-ui/src/button";
+import { Card, CardContent } from "@/packages/alida-ui/src/card";
+import { Input } from "@/packages/alida-ui/src/input";
+import { Navbar } from "@/packages/alida-ui/src/navbar";
 
 export function PreviewGrid() {
   return (
@@ -16,19 +16,17 @@ export function PreviewGrid() {
 
       {/* Component cards */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {/* Buttons */}
-        <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 text-center transition-all duration-300">
-          <div className="flex justify-center mb-3">
-            <MousePointerClick className="w-6 h-6 text-white/70" />
-          </div>
-          <h3 className="text-white/90 mb-2 text-lg font-medium">Buttons</h3>
-          <p className="text-white/50 text-sm mb-4">
-            Minimal, responsive, and themeable — built with motion in mind.
-          </p>
-          <Button className="px-4 py-2">
-            Click me
-          </Button>
-        </div>
+{/* Buttons */}
+<div className="h-full flex flex-col justify-center items-center rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 text-center transition-all duration-300">
+  <div className="flex justify-center mb-3">
+    <MousePointerClick className="w-6 h-6 text-white/70" />
+  </div>
+  <h3 className="text-white/90 mb-2 text-lg font-medium">Buttons</h3>
+  <p className="text-white/50 text-sm mb-4 max-w-xs">
+    Minimal, responsive, and themeable — built with motion in mind.
+  </p>
+  <Button className="px-4 py-2">Click me</Button>
+</div>
 
         {/* Cards */}
         <div className="w-full flex justify-center">
@@ -56,20 +54,20 @@ export function PreviewGrid() {
         </div>
 
 
-        {/* Inputs */}
-        <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 text-center transition-all duration-300">
-          <div className="flex justify-center mb-3">
-            <Layers className="w-6 h-6 text-white/70" />
-          </div>
-          <h3 className="text-white/90 mb-2 text-lg font-medium">Inputs</h3>
-          <p className="text-white/50 text-sm mb-4">
-            Clean, accessible fields that blend with any UI.
-          </p>
-          <Input
-            className="bg-transparent border border-white/20 rounded-md px-3 py-2 w-full"
-            placeholder="Type something..."
-          />
-        </div>
+{/* Inputs */}
+<div className="h-full flex flex-col justify-center items-center rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 text-center transition-all duration-300">
+  <div className="flex justify-center mb-3">
+    <Layers className="w-6 h-6 text-white/70" />
+  </div>
+  <h3 className="text-white/90 mb-2 text-lg font-medium">Inputs</h3>
+  <p className="text-white/50 text-sm mb-4 max-w-xs">
+    Clean, accessible fields that blend with any UI.
+  </p>
+  <Input
+    className="bg-transparent border border-white/20 rounded-md px-3 py-2 w-full max-w-xs"
+    placeholder="Type something..."
+  />
+</div>
       </div>
 
       <div className="my-8 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm 
